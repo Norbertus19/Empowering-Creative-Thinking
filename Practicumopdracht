@@ -1,0 +1,37 @@
+//les 1
+//Mijn opdracht 1 voor het eerste practicum 
+
+
+void setup(){
+  size(1100,400); //breed werkblad
+  background(200,130,120); //zalmkleurig achtergrond
+}
+
+void draw(){
+  //poppetje 1 (Basic)
+  fill(200,0,100); //roze kleur gegeven
+  rect(100,50,150,250); //lichaam
+  rect(250,300 , 50,50); //voet 1
+  rect(50,300, 50,50); //voet 2
+  rect(130,30, 200,20); //hoofd
+  rect(250,140, 20,50); //arm
+  
+ //poppetje 2 (advanced)
+  fill(100,0,200); //paarse kleur gegeven
+  rect(500,50, 150,250); //lichaam
+  rect(650,300,50,50); //voet 1
+  rect(450,300,50,50); //voet 2
+  rect(530,30,200,20); //hoofd
+  rect(650,140,20,50); //arm
+
+  // poppetje 3 (expert)
+  scale(0.5);  //verkleining
+  translate(1100,200); //verplaatsing na het verkleinen
+  fill(100,100,200);  //blauwe kleur gegeven
+  rect(700,50, 150,250); //lichaam
+  rect(850,300,50,50); //voet 1
+  rect(650,300,50,50); //voet 2
+  rect(730,30,200,20); //hoofd
+  rect(850,140,20,50); //arm
+  
+}
