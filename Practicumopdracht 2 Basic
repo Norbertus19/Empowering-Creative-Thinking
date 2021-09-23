@@ -1,0 +1,43 @@
+//basic
+int SpelerPosX = 0;
+int Enemy1PosX = int(random(-100,0));
+int Enemy1PosY = 0;
+int bewegingSpelerX = 1;
+int bewegingEnemy1X = int(random(0,3));
+int bewegingEnemy1Y= -2;
+
+void setup() {
+   size(500, 500);
+}
+
+void draw() {
+  
+   SpelerPosX = SpelerPosX + bewegingSpelerX;
+   Enemy1PosX = Enemy1PosX + bewegingEnemy1X;
+   Enemy1PosY = Enemy1PosY + bewegingEnemy1Y;
+  
+   background(0,240,0);
+  //Speler
+   rect(SpelerPosX+300,130,30,30);
+
+  //Enemy 1
+   rect(Enemy1PosX+150,Enemy1PosY+130,30,30);
+   rect(Enemy1PosX+140,Enemy1PosY+160,50,80);
+   rect(Enemy1PosX+110,Enemy1PosY+160,30,60);
+   rect(Enemy1PosX+190,Enemy1PosY+160,30,60);
+
+   rect(Enemy1PosX+140,Enemy1PosY+240,25,40);
+   rect(Enemy1PosX+165,Enemy1PosY+240,25,40);
+
+  //Enemy 2
+   rect(160,340,20,20);
+   rect(160,360,20,80);
+   rect(140,360,20,60);
+   rect(180,360,20,60);
+
+   rect(160,440,10,40);
+   rect(170,440,10,40);
+   
+
+
+}
