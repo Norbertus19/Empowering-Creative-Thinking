@@ -1,0 +1,16 @@
+int waardeX = 0;
+int waardeY = 0; 
+String outputTekst = "  We hebben een waarde van: "; 
+
+void setup() {
+  size(200,200);
+}
+
+void draw(){
+  int verhogingX = int(random(10,20));
+  int verhogingY = int(random(10,20));
+  waardeX = waardeX + verhogingX;
+  waardeY = waardeY + verhogingY;
+  println(outputTekst + waardeX, outputTekst + waardeY);
+  
+}
